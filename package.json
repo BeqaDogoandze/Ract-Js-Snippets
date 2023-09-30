@@ -1,0 +1,34 @@
+{
+  "name": "react-js-snippets",
+  "publisher": "beqadogonadze",
+  "icon": "jslogo.png",
+  "displayName": "Ract-Js-Snippets",
+  "description": "Snippets for Javascript and React to make your coding journey easy",
+  "version": "1.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beqa-dogonadze/Ract-Js-Snippets"
+  },
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

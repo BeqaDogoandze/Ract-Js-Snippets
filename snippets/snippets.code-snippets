@@ -1,0 +1,22 @@
+{
+  "component": {
+    "scope": "javascript,typescript",
+    "prefix": "fn",
+    "body": ["const App = () => {return <div>Start</div>} \nexport default App"]
+  },
+  "arr": {
+    "scope": "javascript,typescript",
+    "prefix": "arr",
+    "body": ["const arr = []"]
+  },
+  "const": {
+    "scope": "javascript,typescript",
+    "prefix": "co",
+    "body": ["const "]
+  },
+  "console": {
+    "scope": "javascript,typescript",
+    "prefix": "cl",
+    "body": ["console.log() "]
+  }
+}

@@ -1,22 +1,43 @@
 {
   "component": {
-    "scope": "javascript,typescript",
+    "scope": "javascript, typescript, javascriptreact",
     "prefix": "fn",
-    "body": ["const App = () => {return <div>Start</div>} \nexport default App"]
+    "body": ["const ${1:App} = () => {\n\treturn <div>Start</div>\n} \nexport default ${1:App}"]
   },
   "arr": {
-    "scope": "javascript,typescript",
+    "scope": "javascript, typescript, javascriptreact",
     "prefix": "arr",
     "body": ["const arr = []"]
   },
   "for loop": {
-    "scope": "javascript,typescript",
+    "scope": "javascript, typescript, javascriptreact",
     "prefix": "fl",
     "body": ["for (let i = 0; i < 10; i++) {\n\n}"]
   },
+  "for each": {
+    "scope": "javascript, typescript, javascriptreact",
+    "prefix": "fe",
+    "body": ["arr.forEach((el) => {\n\t${1:}\n})"]
+  },
   "console": {
-    "scope": "javascript,typescript",
+    "scope": "javascript, typescript, javascriptreact",
     "prefix": "cl",
-    "body": ["console.log() "]
-  }
+    "body": ["console.log(${1:})"]
+  },
+  "arrow function": {
+    "scope": "javascript, typescript, javascriptreact",
+    "prefix": "arf",
+    "body": ["const ${1:hello} = () => {\n\treturn\n}"]
+  },
+  "usestate": {
+    "scope": "javascript, typescript, javascriptreact",
+    "prefix": "uss",
+    "body": ["const [count, setCount] = useState(0);"]
+  },
+  "useeffect": {
+    "scope": "javascript,typescript, javascriptreact",
+    "prefix": "usf",
+    "body": ["useEffect(() => {\n\t${1:}\n});"]
+  },
+  
 }

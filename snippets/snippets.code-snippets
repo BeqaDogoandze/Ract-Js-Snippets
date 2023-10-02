@@ -9,10 +9,10 @@
     "prefix": "arr",
     "body": ["const arr = []"]
   },
-  "const": {
+  "for loop": {
     "scope": "javascript,typescript",
-    "prefix": "co",
-    "body": ["const "]
+    "prefix": "fl",
+    "body": ["for (let i = 0; i < 10; i++) {\n\n}"]
   },
   "console": {
     "scope": "javascript,typescript",

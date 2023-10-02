@@ -12,7 +12,7 @@
   "for loop": {
     "scope": "javascript, typescript, javascriptreact",
     "prefix": "fl",
-    "body": ["for (let i = 0; i < 10; i++) {\n\n}"]
+    "body": ["for (let i = 0; i < 10; i++) {\n\t\n}"]
   },
   "for each": {
     "scope": "javascript, typescript, javascriptreact",

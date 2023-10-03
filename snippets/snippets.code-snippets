@@ -39,5 +39,4 @@
     "prefix": "usf",
     "body": ["useEffect(() => {\n\t${1:}\n});"]
   },
-  
 }

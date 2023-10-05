@@ -2,12 +2,19 @@
   "component": {
     "scope": "javascript, typescript, javascriptreact",
     "prefix": "fn",
-    "body": ["const ${1:App} = () => {\n\treturn <div>Start</div>\n} \nexport default ${1:App}"]
+    "body": [
+      "const ${TM_FILENAME_BASE} = () => {\n\treturn <div>Start</div>\n} \nexport default ${TM_FILENAME_BASE}"
+    ]
+  },
+  "arrow function": {
+    "scope": "javascript, typescript, javascriptreact",
+    "prefix": "arf",
+    "body": ["const ${1:hello} = () => {\n\treturn\n}"]
   },
   "arr": {
     "scope": "javascript, typescript, javascriptreact",
     "prefix": "arr",
-    "body": ["const arr = []"]
+    "body": ["const ${1:arr} = []"]
   },
   "for loop": {
     "scope": "javascript, typescript, javascriptreact",
@@ -24,19 +31,14 @@
     "prefix": "cl",
     "body": ["console.log(${1:})"]
   },
-  "arrow function": {
-    "scope": "javascript, typescript, javascriptreact",
-    "prefix": "arf",
-    "body": ["const ${1:hello} = () => {\n\treturn\n}"]
-  },
   "usestate": {
     "scope": "javascript, typescript, javascriptreact",
-    "prefix": "uss",
+    "prefix": "use",
     "body": ["const [count, setCount] = useState(0);"]
   },
   "useeffect": {
     "scope": "javascript,typescript, javascriptreact",
     "prefix": "usf",
-    "body": ["useEffect(() => {\n\t${1:}\n});"]
-  },
+    "body": ["useEffect((el) => {\n\t${1:}\n});"]
+  }
 }

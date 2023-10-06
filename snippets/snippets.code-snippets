@@ -16,6 +16,11 @@
     "prefix": "arr",
     "body": ["const ${1:arr} = []"]
   },
+  "const": {
+    "scope": "javascript, typescript, javascriptreact",
+    "prefix": "co",
+    "body": ["const ${1:} = "]
+  },
   "for loop": {
     "scope": "javascript, typescript, javascriptreact",
     "prefix": "fl",
@@ -24,7 +29,7 @@
   "for each": {
     "scope": "javascript, typescript, javascriptreact",
     "prefix": "fe",
-    "body": ["arr.forEach((el) => {\n\t${1:}\n})"]
+    "body": ["${1:ar}.forEach((el) => {\n\t\n})"]
   },
   "console": {
     "scope": "javascript, typescript, javascriptreact",
@@ -40,5 +45,30 @@
     "scope": "javascript,typescript, javascriptreact",
     "prefix": "usf",
     "body": ["useEffect((el) => {\n\t${1:}\n});"]
+  },
+  "export": {
+    "scope": "javascript,typescript, javascriptreact",
+    "prefix": "ed",
+    "body": ["export default"]
+  },
+  "export": {
+    "scope": "javascript,typescript, javascriptreact",
+    "prefix": "imax",
+    "body": ["import axios from 'axios'"]
+  },
+  "fetch": {
+    "scope": "javascript,typescript, javascriptreact",
+    "prefix": "fet",
+    "body": [
+      "const fetchUserData = () => {"
+      "  fetch('${1:URL/}')"
+      "    .then((response) => {"
+      "      return response.json()"
+      "    })"
+      "    .then((data) => {"
+      "      setUsers(data)"
+      "    })"
+    "}"
+    ]
   }
 }

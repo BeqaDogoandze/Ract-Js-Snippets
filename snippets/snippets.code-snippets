@@ -36,39 +36,58 @@
     "prefix": "cl",
     "body": ["console.log(${1:})"]
   },
+  "import usestate": {
+    "scope": "javascript,typescript, javascriptreact",
+    "prefix": "imeff",
+    "body": ["import useState  from 'react'"]
+  },
   "usestate": {
     "scope": "javascript, typescript, javascriptreact",
     "prefix": "use",
     "body": ["const [count, setCount] = useState(0);"]
   },
+  "import useeffect": {
+    "scope": "javascript,typescript, javascriptreact",
+    "prefix": "imeff",
+    "body": ["import useEffect  from 'react'"]
+  },
   "useeffect": {
     "scope": "javascript,typescript, javascriptreact",
-    "prefix": "usf",
+    "prefix": "eff",
     "body": ["useEffect((el) => {\n\t${1:}\n});"]
   },
-  "export": {
+  "export default": {
     "scope": "javascript,typescript, javascriptreact",
     "prefix": "ed",
     "body": ["export default"]
   },
-  "export": {
+  "import axios": {
     "scope": "javascript,typescript, javascriptreact",
     "prefix": "imax",
     "body": ["import axios from 'axios'"]
   },
+  "axi": {
+    "scope": "javascript,typescript, javascriptreact",
+    "description": "creates API request using axios, change `request` and `setFunction` with your own variable name",
+    "prefix": "axi",
+    "body": [
+      "useEffect(() => {"
+      "  axios"
+      "    .get(request.requestName)"
+      "    .then((response) => setFunction(response.data.results))"
+      "}, [])"
+    ]
+  },
   "fetch": {
     "scope": "javascript,typescript, javascriptreact",
+    "description": "creates API request using fetch, change `setFunction` with your own variable name",
     "prefix": "fet",
     "body": [
-      "const fetchUserData = () => {"
-      "  fetch('${1:URL/}')"
-      "    .then((response) => {"
-      "      return response.json()"
-      "    })"
-      "    .then((data) => {"
-      "      setUsers(data)"
-      "    })"
-    "}"
+      "useEffect(() => {"
+      "  fetch('Place your URL!)"
+      "    .then(response => response.json())"
+      "    .then(data => setFunction(data.message))"
+      "}, [])"
     ]
-  }
+  },
 }

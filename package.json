@@ -4,13 +4,13 @@
   "icon": "jslogo.png",
   "displayName": "React-Js Snippets",
   "description": "Snippets for Javascript and React to make your coding journey easy",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "repository": {
     "type": "git",
     "url": "https://github.com/beqa-dogonadze/Ract-Js-Snippets"
   },
   "engines": {
-    "vscode": "^1.50.0"
+    "vscode": "^1.40.0"
   },
   "categories": [
     "Snippets"

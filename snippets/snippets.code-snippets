@@ -3,7 +3,7 @@
     "scope": "javascript, typescript, javascriptreact",
     "prefix": "fn",
     "body": [
-      "const ${TM_FILENAME_BASE} = () => {\n\treturn <div>Start</div>\n} \nexport default ${TM_FILENAME_BASE}"
+      "const ${TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<${1:div}>\n\t\t\t\n\t\t</${1:div}>\n\t)\n} \nexport default ${TM_FILENAME_BASE}"
     ]
   },
   "arrow function": {
@@ -24,12 +24,25 @@
   "for loop": {
     "scope": "javascript, typescript, javascriptreact",
     "prefix": "fl",
-    "body": ["for (let i = 0; i < 10; i++) {\n\t\n}"]
+    "body": ["for (let i = 0; i < ${1:cond}; i++) {\n\t\n}"]
+  },
+	"ternery": {
+    "scope": "javascript, typescript, javascriptreact",
+		"description": "if condition is true, operator will return `true`, else `false`",
+    "prefix": "ter",
+    "body": ["${1:condtion} ? true : false"]
   },
   "for each": {
     "scope": "javascript, typescript, javascriptreact",
-    "prefix": "fe",
-    "body": ["${1:ar}.forEach((el) => {\n\t\n})"]
+    "prefix": "each",
+    "body": ["forEach((${1:el}) => {\n\treturn\n})"]
+  },
+  "map": {
+    "scope": "javascript, typescript, javascriptreact",
+    "prefix": "map",
+    "body": [
+      "map((index, ${item}) => (\n\n))"
+    ]
   },
   "console": {
     "scope": "javascript, typescript, javascriptreact",
@@ -38,18 +51,13 @@
   },
   "import usestate": {
     "scope": "javascript,typescript, javascriptreact",
-    "prefix": "imeff",
-    "body": ["import useState  from 'react'"]
+    "prefix": "imstate",
+    "body": ["import { useState, useEffect }  from 'react'"]
   },
   "usestate": {
     "scope": "javascript, typescript, javascriptreact",
     "prefix": "use",
-    "body": ["const [count, setCount] = useState(0);"]
-  },
-  "import useeffect": {
-    "scope": "javascript,typescript, javascriptreact",
-    "prefix": "imeff",
-    "body": ["import useEffect  from 'react'"]
+    "body": ["const [${1:count}, set${2:count}] = useState(0);"]
   },
   "useeffect": {
     "scope": "javascript,typescript, javascriptreact",

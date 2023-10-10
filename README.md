@@ -13,10 +13,16 @@ const App = () => {
 } 
 export default App
 
-###  fre -> creates a forEach function
-arr.forEach((el) => {	
-  ///
+###  each -> creates a forEach function
+forEach((el) => {	
+  return 
 })
+
+###  map -> creates a map function
+
+### ter -> ternary operator
+
+condtion ? true  : false
 
 ###
 import useState from 'react';

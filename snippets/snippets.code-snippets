@@ -14,17 +14,17 @@
   "arr": {
     "scope": "javascript, typescript, javascriptreact",
     "prefix": "arr",
-    "body": ["const ${1:arr} = []"]
+    "body": ["const ${1:arr} = [${2:}]"]
   },
   "const": {
     "scope": "javascript, typescript, javascriptreact",
-    "prefix": "co",
-    "body": ["const ${1:} = "]
+    "prefix": "con",
+    "body": ["const ${1:} = ${2:}"]
   },
   "for loop": {
     "scope": "javascript, typescript, javascriptreact",
     "prefix": "fl",
-    "body": ["for (let i = 0; i < ${1:cond}; i++) {\n\t\n}"]
+    "body": ["for (let i = 0; i < ${1:cond}; i++) {\n\t${2:}\n}"]
   },
 	"ternery": {
     "scope": "javascript, typescript, javascriptreact",
@@ -39,7 +39,7 @@
   },
   "map": {
     "scope": "javascript, typescript, javascriptreact",
-    "prefix": "map",
+    "prefix": "mp",
     "body": [
       "map((index, ${item}) => (\n\n))"
     ]
@@ -81,7 +81,7 @@
     "body": [
       "useEffect(() => {"
       "  axios"
-      "    .get(request.requestName)"
+      "    .get('${1:url}')"
       "    .then((response) => setFunction(response.data.results))"
       "}, [])"
     ]
@@ -92,9 +92,9 @@
     "prefix": "fet",
     "body": [
       "useEffect(() => {"
-      "  fetch('Place your URL!)"
+      "  fetch('${1:Place your URL!}')"
       "    .then(response => response.json())"
-      "    .then(data => setFunction(data.message))"
+      "    .then(data => ${2:setFunction}(data.message))"
       "}, [])"
     ]
   },

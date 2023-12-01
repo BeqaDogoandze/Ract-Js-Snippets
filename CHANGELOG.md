@@ -15,3 +15,6 @@
 
 ##[1.0.7]
 # Added detailed descriptions for snippets after invocation
+
+##[1.1.1]
+# fixed detailed descriptions for snippets on github

@@ -3,13 +3,13 @@
     "scope": "javascript, typescript, javascriptreact",
     "prefix": "fn",
     "body": [
-      "const ${TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<${1:div}>\n\t\t\t\n\t\t</${1:div}>\n\t)\n} \nexport default ${TM_FILENAME_BASE}"
+      "const ${TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<${1:div}>\n\t\t\t\n\t\t</div>\n\t)\n} \nexport default ${TM_FILENAME_BASE}"
     ]
   },
   "arrow function": {
     "scope": "javascript, typescript, javascriptreact",
     "prefix": "arf",
-    "body": ["const ${1:hello} = () => {\n\treturn\n}"]
+    "body": ["const ${1:myFunc} = () => {\n\treturn\n}"]
   },
   "arr": {
     "scope": "javascript, typescript, javascriptreact",
@@ -39,7 +39,7 @@
   },
   "map": {
     "scope": "javascript, typescript, javascriptreact",
-    "prefix": "mp",
+    "prefix": "map",
     "body": [
       "map((index, ${item}) => (\n\n))"
     ]
